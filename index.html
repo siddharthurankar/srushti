@@ -899,7 +899,7 @@ main.show{ opacity:1; }
 
         <div class="hidden-video" id="surprise-video-box">
           <div class="surprise-video-box reveal">
-            <video id="surprise-video" src="us.mp4" controls playsinline loop preload="auto"></video>
+            <video id="surprise-video" src="assets/us.mp4" controls playsinline loop preload="auto"></video>
           </div>
           <p class="surprise-caption" id="surprise-caption"></p>
           <p class="surprise-afterline" id="surprise-afterline"></p>
@@ -1114,7 +1114,7 @@ const CONFIG = {
       teaser: "Wait — there's one more surprise",
       line: "Just open it. You might find it cute.",
       buttonText: "OPEN IT",
-      video: "us.mp4",
+      video: "assets/us.mp4",
       caption: "Us. That's the whole surprise. That's the best thing I have.",
       afterLine: "I love you, Srushti. 💗"
     }
@@ -1229,7 +1229,7 @@ setText('#surprise-teaser', C.finale?.surprise?.teaser);
 setText('#surprise-line', C.finale?.surprise?.line);
 setText('#surprise-open-btn', C.finale?.surprise?.buttonText);
 const surpriseVid = $('#surprise-video');
-if (surpriseVid) surpriseVid.src = C.finale?.surprise?.video || 'us.mp4';
+if (surpriseVid) surpriseVid.src = C.finale?.surprise?.video || 'assets/us.mp4';
 setText('#surprise-caption', C.finale?.surprise?.caption);
 setText('#surprise-afterline', C.finale?.surprise?.afterLine);
 
