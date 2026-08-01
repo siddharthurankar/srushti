@@ -1,0 +1,49 @@
+💗 DROP YOUR PHOTOS, VIDEOS AND SONG IN THIS FOLDER 💗
+
+The site is already looking for these exact file names:
+
+  my-goal.mp3       ← the song ("My Goal" — The Temptations)
+  us.mp4            ← THE SURPRISE VIDEO of the two of you (the last reveal)
+  photo-1.jpg       ← the "feature" (big) photo
+  photo-2.jpg
+  photo-3.jpg
+  photo-4.jpg
+  photo-5.jpg
+  photo-6.jpg
+  video-1.mp4
+  video-2.mp4
+
+EASIEST OPTION
+Rename your files to match the names above and drop them in. Done — nothing
+else to change.
+
+THE SONG
+Save the audio file as `my-goal.mp3`. A Spotify or YouTube *link* can't be
+played inside a page like this (they block it), so it has to be an actual
+audio file sitting in this folder. It starts on its own when she taps
+"Open my heart", fades up slowly over about 6 seconds, and stays quiet
+underneath the words. If your file is a .m4a, keep the extension and change
+`musicFile` in config.js instead of renaming it.
+
+THE SURPRISE VIDEO
+`us.mp4` is the one that appears at the very end, after she picks "Yes".
+Keep it short and cute. It plays with sound, and the song automatically
+ducks down while it's playing, then comes back after.
+
+WANT DIFFERENT NAMES / MORE FILES?
+Open config.js, find section 7 (THE GALLERY), and edit the `src` names.
+Add as many lines as you want by copying an existing one. The surprise
+video lives in section 11 (`finale.surprise.video`).
+
+PORTRAIT vs LANDSCAPE
+Mix them freely. Tall photos and Instagram-reel-shaped videos stay tall,
+wide ones stay wide. Nothing gets squashed or badly cropped — the site
+measures every file and gives it the right space. You don't have to do
+anything.
+
+FILE TIPS
+• Photos: .jpg / .png / .webp — resize to about 2000px on the long edge so
+  the site stays fast. Anything straight off a phone works too.
+• Videos: .mp4 (H.264) plays everywhere. Keep them under ~30 MB each if you
+  can, especially if she'll open this on mobile data.
+• Song: .mp3 or .m4a. Don't rename a .m4a to .mp3 — update config.js instead.
